@@ -26,7 +26,6 @@ const CountryInfo = props => {
     )
       .then(response => response.json())
       .then(data => {
-        console.log(data.current);
         const {temperature, wind_speed, weather_icons, precip} = data.current;
         navigation.navigate('WeatherReport', {
           temperature,

@@ -15,10 +15,7 @@ const CountryForm = ({navigation}) => {
   const [loading, setLoading] = useState(false);
   const [TextColor] = useState('#fff');
 
-  console.log('Inside CountryForm');
-
   const handleSubmit = async () => {
-    console.log(`Submitted ${country}`);
     setLoading(true);
     setCountry('');
     fetch(`https://restcountries.com/v3.1/name/${country}`)
