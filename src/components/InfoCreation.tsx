@@ -7,7 +7,7 @@ type InfoCreationType = {
 };
 
 function InfoCreation({value, style}: InfoCreationType): JSX.Element {
-  console.log(value);
+ 
   const [keyName] = useState(Object.keys(value)[0]);
   return (
     <View style={[styles.info, style]}>
